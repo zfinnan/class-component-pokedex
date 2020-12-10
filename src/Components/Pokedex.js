@@ -27,6 +27,10 @@ class Pokedex extends Component {
             this.setState({ 
                 pokemonImage: res.data.sprites.front_default
             })
+        }).catch((err) => {
+            this.setState({
+                pokemonImage: ''
+            })
         })
     }
 
